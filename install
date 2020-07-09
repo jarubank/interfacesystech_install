@@ -240,8 +240,8 @@ export PLATFORMIO_CI_SRC=$PWD/src/firmware/firmware.ino
 platformio ci --project-conf=./platformio.ini --lib="./lib/ros_lib" --lib="./lib/config"  --lib="./lib/motor"  --lib="./lib/kinematics"  --lib="./lib/pid"  --lib="./lib/imu" --lib="./lib/encoder"
 
 echo "source $HOME/interfacesystechrobot_ws/devel/setup.bash" >> $HOME/.bashrc
-echo "export LINOLIDAR=$SENSOR" >> $HOME/.bashrc
-echo "export LINOBASE=$BASE" >> $HOME/.bashrc
+echo "export INTERFACESYSTECHLIDAR=$SENSOR" >> $HOME/.bashrc
+echo "export INTERFACESYSTECHBASE=$BASE" >> $HOME/.bashrc
 source $HOME/.bashrc
 
 cd $HOME/interfacesystechrobot_ws
